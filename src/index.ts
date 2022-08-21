@@ -45,9 +45,9 @@ async function test() {
 
   console.log("memory: ", memory);
 
-  const ptr: number = memory.stringToUTF8("testdem\u0000oxxxxxxxxxxxxxu");
+  // const ptr: number = memory.stringToUTF8("testdemxxxu\u0000ou");
 
-  const text = memory.UTF8ToString(ptr);
+  // const text = memory.UTF8ToString(ptr);
 
   // // @ts-ignore
   // const ptr: number = memory.stringToUTF16("testdem\u0000oxxxxxxxxxxxxxu");
@@ -55,7 +55,11 @@ async function test() {
   // // @ts-ignore
   // const text = memory.UTF16ToString(ptr);
 
-  console.log("text: ", text);
+  const stringHandler = ctx.newString("testdemxxxu\u0000ou");
+
+  console.log("ptr: ", stringHandler.value);
+
+  console.log("text: ", ctx.getString(stringHandler));
 
 }
 
