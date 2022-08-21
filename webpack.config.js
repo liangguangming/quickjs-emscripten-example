@@ -11,6 +11,11 @@ module.exports = {
   },
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ],
+    alias: {
+      fs: false,
+      path: false,
+      crypto: false,
+    }
   },
   mode: mode,
   devtool: 'inline-source-map',

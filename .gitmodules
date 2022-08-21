@@ -1,0 +1,3 @@
+[submodule "quickjs-emscripten"]
+	path = quickjs-emscripten
+	url = git@github.com:liangguangming/quickjs-emscripten.git
