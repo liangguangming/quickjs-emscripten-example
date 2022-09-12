@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Sun Aug 21 23:53:18 2022
+# Make data base, printed on Mon Sep 12 22:54:53 2022
 
 # Variables
 
@@ -15,6 +15,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -42,9 +44,9 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/3p/9d8ppyx17gb_4r7j1yky3dw80000gn/T/vscode-ipc-840c4dc8-09cd-4460-88d4-91f3a917a3da.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/3p/9d8ppyx17gb_4r7j1yky3dw80000gn/T/vscode-ipc-cd82ad6c-3feb-4836-8c2d-268c1eb41f11.sock
 # environment
-VSCODE_CWD = /
+VSCODE_CWD = /Users/gmliang/projects
 # environment
 PATH = /Users/gmliang/.nvm/versions/node/v12.22.12/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/gmliang/.fzf/bin
 # environment
@@ -58,7 +60,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.F48KoEjTUN/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DcnQa14rjs/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -77,6 +79,8 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 HOME = /Users/gmliang
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = /Users/gmliang/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
 # environment
@@ -98,7 +102,9 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+SHLVL = 3
+# environment
+TERM_SESSION_ID = 7D37563B-3B2F-4EA0-8526-5364FB0C4EF5
 # default
 MAKE_VERSION := 3.81
 # environment
@@ -113,6 +119,8 @@ LESS = -R
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = Apple_Terminal
 # default
 .VARIABLES := 
 # environment
@@ -128,9 +136,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
+TERM_PROGRAM_VERSION = 445
+# environment
 NVM_DIR = /Users/gmliang/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.3449133.3449139
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.3449133.3449139.B679BA92-188A-497D-AE1C-D4E75C882AEB
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -162,9 +172,11 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3543
+TERM = xterm-256color
+# environment
+VSCODE_PID = 10012
 # variable set hash-table stats:
-# Load=76/1024=7%, Rehash=0, Collisions=1/97=1%
+# Load=82/1024=8%, Rehash=0, Collisions=2/103=2%
 
 # Pattern-specific Variable Values
 
@@ -172,7 +184,7 @@ VSCODE_PID = 3543
 
 # Directories
 
-# . (device 16777230, inode 5835288): 18 files, no impossibilities.
+# . (device 16777234, inode 5835288): 18 files, no impossibilities.
 
 # 18 files, no impossibilities in 1 directories.
 
@@ -246,7 +258,7 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Aug 21 23:53:18 2022
+# Finished Make data base on Mon Sep 12 22:54:53 2022
 
  
 make: *** No rule to make target `all'.  Stop.
